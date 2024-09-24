@@ -3,3 +3,124 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
+
+header {
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    background: url("../images/cover-image-dark.png");
+}
+
+.decorated-zone {
+
+}
+
+.header__theme-menu {
+    display: flex;
+    margin-left: auto;
+    margin-top: 20%;
+
+}
+
+.header__theme-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main_header{
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    font-weight: 700;
+    font-family: 'IBM Plex Mono', monospace;
+    line-height: 95.7px;
+    display: block;
+    margin-top:17.3%;
+}
+
+.main_title {
+    display: block;
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: left;
+    letter-spacing: 0.12em;
+    margin-left: auto;
+    margin-top: 10.6%;
+}
+
+.right_corner {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top:10px;
+    border-right: 1px solid;
+    border-top: 1px solid;
+    width: 25px;
+    height: 25px;
+    align-self: end;
+    border-color: #FF0070;
+}
+
+.rec {
+    font-family: 'IBM Plex Mono', sans-serif;
+    color: #FF0070;
+    display: flex;
+    position: absolute;
+    right: 40px;
+    top: 15px;
+}
+
+.ellipse {
+    width: 9px;
+    height: 9px;
+    background-color: #FF0070;
+    margin: auto;
+    border-radius: 9px;
+    box-shadow: 1px 1px 1px 1px #FF0070;
+}
+
+.left_corner {
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    width: 25px;
+    height: 25px;
+    border-color: #FF0070;
+    position: absolute;
+    bottom:10px;
+    left:10px;
+}
+
+.main_content {
+    display: grid;
+
+}
+
+@media (min-width: 768px) {
+    .main_title {
+        max-width: calc(100%/2);
+        margin-top: 21%;
+    }
+
+    .main_header {
+        margin-top: 22.5%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header__theme-menu {
+        display: flex;
+        align-self: center;
+    }
+
+
+
+    .header__theme-menu-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+
+}
