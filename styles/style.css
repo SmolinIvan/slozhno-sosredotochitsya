@@ -2,13 +2,15 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+
+
 }
 
 header {
-    height: 98vh;
+    height: calc(100vh - 10px - 10px) ;
     display: flex;
     flex-direction: column;
-    background: url("../images/cover-image-dark.png");
+
 }
 
 .decorated-zone {
@@ -115,7 +117,7 @@ header {
 
 
 .article__title {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'IBM Plex Mono', sans-serif;
     font-weight: 700;
     color: #FF0070;
     font-size: 18px;
@@ -129,14 +131,19 @@ header {
     gap: 20px;
 }
 
+.article__block__2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .description {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'IBM Plex Mono', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 23.4px;
     text-align: left;
     display: block;
-    margin-top: 10px;
     color: #F1B2CE;
 
 }
@@ -152,13 +159,32 @@ header {
     .page {
         padding:10px;
     }
+
+    header {
+        height: calc(100vh - 20px - 20px) ;
+        padding: 0px 2px 0px 2px;
+    }
+
     .title {
         max-width: calc(100%/2);
         margin-top: 20px;
+
+    }
+
+    .main_content {
+        margin-top: 80px;
+        gap:80px;
+
     }
 
     .article__title {
         max-width: calc((98vw/3) - 20px);
+        min-width: 236px;
+
+    }
+
+    .article__template {
+        gap: 10px;
     }
 
     .main_header {
@@ -185,6 +211,11 @@ header {
 
     }
 
+    .main_content {
+        margin-top: 80px;
+        gap:80px;
+    }
+
     .article__title {
         max-width: calc(98vw/3);
     }
@@ -192,7 +223,7 @@ header {
     .content__2 {
         display: grid;
         grid-auto-flow: row;
-        gap: 20px;
+        /*gap: 20px;*/
     }
 
     .article__block__2 {
