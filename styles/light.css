@@ -4,9 +4,35 @@
   переключая тему
 */
 
+
+
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+    background: url("../images/cover-image-light.png") fixed ;
+    --background-color: black;
+    --header-font-color:#FFC2E6;
+    --header-shadow: 4px 4px #FF0070;
+    --main-title-background-color: #FF8DCB;
+    --main-title-color: #353430;
+    --description-font-color: #353430;
+    --article-font-color: #353430;
+
+
 }
+
+
+/*.page {*/
+
+/*}*/
+
+/*.main_header {*/
+/*    color: var(--header-font-color);*/
+/*    text-shadow: var(--header-shadow);*/
+/*}*/
+
+/*.main_title {*/
+/*    background-color: var(--main-title-background-color);*/
+/*}*/

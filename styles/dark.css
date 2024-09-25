@@ -4,14 +4,7 @@
   переключая тему
 */
 
-body {
-    --background-color: black;
-    --header-font-color:#DB00FF;
-    --header-shadow: 4px 4px #FF0070;
-    --main-title-background-color: #FF0070;
 
-
-}
 
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
@@ -19,15 +12,26 @@ body {
     чем стили в медиазапросе предпочтений пользователя
   */
     background: url("../images/cover-image-dark.png") fixed ;
+    --header-font-color:#DB00FF;
+    --header-shadow: 4px 4px #FF0070;
+    --main-title-background-color: #FF0070;
+    --description-font-color: #F1B2CE;
+    --article-font-color: #FF0070;
+    --main-title-color: #000028;
+
 
 
 }
 
-.main_header {
-    color: var(--header-font-color);
-    text-shadow: var(--header-shadow);
-}
+/*.page {*/
 
-.main_title {
-    background-color: var(--main-title-background-color);
-}
+/*}*/
+
+/*.main_header {*/
+/*    color: var(--header-font-color);*/
+/*    text-shadow: var(--header-shadow);*/
+/*}*/
+
+/*.main_title {*/
+/*    background-color: var(--main-title-background-color);*/
+/*}*/
