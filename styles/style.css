@@ -4,14 +4,14 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
     background: var(--background-image);
 
+
 }
 
 .header {
-    height: calc(100vh - 10px - 10px);
-    /*height: 100vh;*/
-    /*width: calc(100vw - 20px - 20px);*/
+    height: 100vh;
     display: grid;
     grid-template-rows:  1fr min-content 1fr;
+    padding: 10px;
 
 }
 
@@ -21,7 +21,7 @@
 
 .header__theme-menu {
     display: flex;
-    margin-left: auto;
+    justify-self: end;
     align-self: center;
 
 }
@@ -50,7 +50,7 @@
     color: var(--description-font-color) ;
 }
 
-.main_header {
+.main_title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     font-weight: 700;
     font-family: 'IBM Plex Mono', sans-serif;
@@ -62,21 +62,22 @@
     text-shadow: 4px 4px #FF0070;
 }
 
-.title {
+.main_subtitle {
     display: flex;
     font-family: 'IBM Plex Mono', sans-serif;
     font-size: 18px;
     font-weight: 700;
-    line-height: 23px;
+    line-height: 24px;
     text-align: left;
     max-height: 117px;
     width: min(100%,364px);
     align-self: center;
     justify-self: end;
     background-color: var(--main-title-background-color);
+    color: var(--article-font-color);
 }
 
-.main_title {
+.article_subtitle {
     display: flex;
     font-family: 'IBM Plex Mono', sans-serif;
     font-size: 18px;
@@ -137,16 +138,14 @@
 }
 
 .main_content {
-    margin-top: 50px;
+    margin-top: 40px;
+    padding: 0px 10px 0px 10px;
     display: flex;
     flex-direction: column;
     gap: 50px;
-    padding: 0px 2px 0px 2px;
 }
 
-
-
-.article__title {
+.article_title {
     font-family: 'IBM Plex Mono', sans-serif;
     font-weight: 700;
     color: var(--article-font-color);
@@ -155,13 +154,13 @@
     margin-bottom: 20px;
 }
 
-.article__block__1 {
+.article_block_1 {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.article__block__2 {
+.article_block_2 {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -178,7 +177,7 @@
 
 }
 
-.article__template {
+.article_template {
     display: flex;
     flex-direction: column;
     gap:10px;
@@ -190,18 +189,19 @@
 
 
 @media (min-width: 768px) {
-    .main_header {
+    .main_title {
         font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }
 
-    .page {
-        padding:10px;
-    }
-
     .header {
-        height: calc(100vh - 20px - 20px);
+        padding: 10px 20px 10px 0px;
     }
 
+    .main_content {
+        padding: 0px 20px 0px 20px;
+        margin-top: 60px;
+        gap:80px;
+    }
 
     .right_corner {
         right: 20px;
@@ -220,36 +220,26 @@
         left:20px;
     }
 
-    .title {
-        width: calc(100%/2);
 
-    }
-
-    .main_content {
-        margin-top: 80px;
-        gap:80px;
-
-    }
-
-    .article__title {
+    .article_title {
         max-width: calc((98vw/3) - 20px);
         min-width: 236px;
 
     }
 
-    .article__template {
+    .article_template {
         gap: 10px;
     }
 
 
-    .content__type__1 {
+    .content_type_1 {
         display: grid;
         gap: 20px;
         grid-template-columns: repeat(3, 1fr);
 
     }
 
-    .article__block__1 {
+    .article_block_1 {
         grid-column-start: 2;  grid-column-end: span 2;
     }
 
@@ -257,26 +247,44 @@
 
 @media (min-width: 1024px) {
 
+    .header {
+        padding: 0px 20px 10px 0px;
+    }
+
+    .header__theme-menu {
+        display: flex;
+        justify-self: center;
+        align-self: start;
+
+    }
+
+    .main_subtitle {
+        width: calc((100vw - 20px - 20px)/2) ;
+
+    }
+
+    .header__theme-menu-list {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+
     .header__theme-menu {
         display: flex;
         flex-direction: column;
     }
-
-    .main_content {
-        margin-top: 80px;
-        gap:80px;
-    }
-
-    .article__title {
+    
+    .article_title {
         max-width: calc(98vw/3);
     }
 
-    .content__type__2 {
+    .content_type_2 {
         display: grid;
         grid-auto-flow: row;
     }
 
-    .article__block__2 {
+    .article_block_2 {
         display: grid;
         gap: 20px;
         grid-template-columns: repeat(3,1fr);
