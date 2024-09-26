@@ -12,9 +12,8 @@
     --subtitle-font-color: #353430;
     --article-title-font-color: #353430;
     --description-font-color: #353430;
-    --rec-visibility: transparent;
     --corner-color: #353430;
-
+    --rec-visibility: transparent;
 }
 
 
@@ -31,6 +30,7 @@
     --subtitle-font-color: #353430;
     --article-title-font-color: #353430;
     --description-font-color: #353430;
+    --corner-color: #353430;
     --rec-visibility: transparent;
 }
 

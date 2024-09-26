@@ -11,7 +11,7 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-    background: url("../images/cover-image-dark.png") fixed;
+    --background-image: url("../images/cover-image-dark.png") fixed;
     --header-shadow: 4px 4px #FF0070;
     --title-background-color: #FF0070;
     --header-font-color:#DB00FF;
@@ -22,34 +22,20 @@
     --corner-color: #FF0070;
 
 
-
-
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         /* Дублируем переменные светлой темы */
-        --background-image: url("../images/cover-image-light.png") fixed;
+        --background-image: url("../images/cover-image-dark.png") fixed;
         --header-shadow: 4px 4px #FF0070;
-        --title-background-color: #FF8DCB;
-        --header-font-color:#FFC2E6;
-        --subtitle-font-color: #353430;
-        --article-title-font-color: #353430;
-        --description-font-color: #353430;
-        --rec-visibility: transparent;
-        --corner-color: #353430;
+        --title-background-color: #FF0070;
+        --header-font-color:#DB00FF;
+        --subtitle-font-color: #000028;
+        --article-title-font-color: #FF0070;
+        --description-font-color: #F1B2CE;
+        --rec-visibility: #FF0070;
+        --corner-color: #FF0070;
     }
 }
 
-/*.page {*/
-
-/*}*/
-
-/*.main_header {*/
-/*    color: var(--header-font-color);*/
-/*    text-shadow: var(--header-shadow);*/
-/*}*/
-
-/*.main_title {*/
-/*    background-color: var(--main-title-background-color);*/
-/*}*/
