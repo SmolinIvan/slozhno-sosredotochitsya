@@ -6,7 +6,7 @@
 
 :root.theme_light {
     --background-image: url("../images/cover-image-light.png") fixed;
-    --background-color: white;
+    --background-color: #FFF1F7;
     --header-shadow: 4px 4px #FF0070;
     --title-background-color: #FF8DCB;
     --header-font-color:#FFC2E6;
@@ -33,25 +33,4 @@
     --description-font-color: #353430;
     --corner-color: #353430;
     --rec-visibility: transparent;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
 }
-
-
-
-
-
-/*.page {*/
-
-/*}*/
-
-/*.main_header {*/
-/*    color: var(--header-font-color);*/
-/*    text-shadow: var(--header-shadow);*/
-/*}*/
-
-/*.main_title {*/
-/*    background-color: var(--main-title-background-color);*/
-/*}*/
