@@ -3,7 +3,8 @@
   и их переопределение под различные устройства
 */
 :root {
-    --background-image: url("../images/cover-image-light.png") fixed;
+    --background-image: url("../images/cover-image.png") fixed;
+    --background-color: white;
     --header-shadow: 4px 4px #FF0070;
     --title-background-color: #FF8DCB;
     --header-font-color:#FFC2E6;

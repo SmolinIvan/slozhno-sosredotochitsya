@@ -6,6 +6,7 @@
 
 :root.theme_light {
     --background-image: url("../images/cover-image-light.png") fixed;
+    --background-color: white;
     --header-shadow: 4px 4px #FF0070;
     --title-background-color: #FF8DCB;
     --header-font-color:#FFC2E6;
@@ -23,7 +24,7 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-    --background-image: url("../images/cover-image-light.png") fixed;
+    --background-image: url("../images/cover-image-light.png");
     --header-shadow: 4px 4px #FF0070;
     --title-background-color: #FF8DCB;
     --header-font-color:#FFC2E6;
@@ -32,6 +33,10 @@
     --description-font-color: #353430;
     --corner-color: #353430;
     --rec-visibility: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 
