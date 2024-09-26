@@ -6,12 +6,15 @@
 
 :root.theme_light {
     --background-image: url("../images/cover-image-light.png") fixed;
-    --header-font-color:#FFC2E6;
     --header-shadow: 4px 4px #FF0070;
-    --main-title-background-color: #FF8DCB;
-    --main-title-color: #353430;
+    --title-background-color: #FF8DCB;
+    --header-font-color:#FFC2E6;
+    --subtitle-font-color: #353430;
+    --article-title-font-color: #353430;
     --description-font-color: #353430;
-    --article-font-color: #353430;
+    --rec-visibility: transparent;
+    --corner-color: #353430;
+
 }
 
 
@@ -21,15 +24,14 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-    --background-image: url("../images/cover-image-light.png") fixed;;
-    --header-font-color:#FFC2E6;
+    --background-image: url("../images/cover-image-light.png") fixed;
     --header-shadow: 4px 4px #FF0070;
-    --main-title-background-color: #FF8DCB;
-    --main-title-color: #353430;
+    --title-background-color: #FF8DCB;
+    --header-font-color:#FFC2E6;
+    --subtitle-font-color: #353430;
+    --article-title-font-color: #353430;
     --description-font-color: #353430;
-    --article-font-color: #353430;
-
-
+    --rec-visibility: transparent;
 }
 
 

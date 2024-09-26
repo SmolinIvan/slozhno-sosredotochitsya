@@ -12,12 +12,15 @@
     чем стили в медиазапросе предпочтений пользователя
   */
     background: url("../images/cover-image-dark.png") fixed;
-    --header-font-color:#DB00FF;
     --header-shadow: 4px 4px #FF0070;
-    --main-title-background-color: #FF0070;
+    --title-background-color: #FF0070;
+    --header-font-color:#DB00FF;
+    --subtitle-font-color: #000028;
+    --article-title-font-color: #FF0070;
     --description-font-color: #F1B2CE;
-    --article-font-color: #FF0070;
-    --main-title-color: #000028;
+    --rec-visibility: #FF0070;
+    --corner-color: #FF0070;
+
 
 
 
@@ -26,12 +29,15 @@
 @media (prefers-color-scheme: dark) {
     :root {
         /* Дублируем переменные светлой темы */
-        --header-font-color:#DB00FF;
+        --background-image: url("../images/cover-image-light.png") fixed;
         --header-shadow: 4px 4px #FF0070;
-        --main-title-background-color: #FF0070;
-        --description-font-color: #F1B2CE;
-        --article-font-color: #FF0070;
-        --main-title-color: #000028;
+        --title-background-color: #FF8DCB;
+        --header-font-color:#FFC2E6;
+        --subtitle-font-color: #353430;
+        --article-title-font-color: #353430;
+        --description-font-color: #353430;
+        --rec-visibility: transparent;
+        --corner-color: #353430;
     }
 }
 

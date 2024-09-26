@@ -43,11 +43,13 @@
     width: 70px;
     border: none;
     background-color: transparent;
+    color: var(--article-title-font-color) ;
 }
 
 .header__theme-menu-button_active {
-    border: 1px black solid;
-    color: var(--description-font-color) ;
+    border: 1px var(--article-title-font-color) solid;
+
+
 }
 
 .main_title {
@@ -73,8 +75,8 @@
     width: min(100%,364px);
     align-self: center;
     justify-self: end;
-    background-color: var(--main-title-background-color);
-    color: var(--article-font-color);
+    background-color: var(--title-background-color);
+    color: var(--subtitle-font-color);
 }
 
 .article_subtitle {
@@ -82,12 +84,12 @@
     font-family: 'IBM Plex Mono', sans-serif;
     font-size: 18px;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 23.4px;
     text-align: left;
     margin-left: auto;
     width: 100%;
-    color: var(--main-title-color) ;
-    background-color: var(--main-title-background-color)
+    color: var(--subtitle-font-color) ;
+    background-color: var(--title-background-color)
 }
 
 .extra_margin {
@@ -104,12 +106,12 @@
     width: 25px;
     height: 25px;
     align-self: end;
-    border-color: #FF0070;
+    border-color: var(--corner-color);
 }
 
 .rec {
     font-family: 'IBM Plex Mono', sans-serif;
-    color: #FF0070;
+    color: var(--rec-visibility);
     display: flex;
     position: absolute;
     right: 40px;
@@ -120,10 +122,11 @@
 .ellipse {
     width: 9px;
     height: 9px;
-    background-color: #FF0070;
+    background-color:var(--rec-visibility);
     margin: auto;
     border-radius: 9px;
-    box-shadow: 1px 1px 1px 1px #FF0070;
+    box-shadow: 1px 1px 1px 1px var(--rec-visibility);
+
 }
 
 .left_corner {
@@ -131,10 +134,11 @@
     border-bottom: 1px solid;
     width: 25px;
     height: 25px;
-    border-color: #FF0070;
+    border-color: var(--corner-color);
     position: absolute;
     bottom:10px;
     left:10px;
+
 }
 
 .main_content {
@@ -148,8 +152,9 @@
 .article_title {
     font-family: 'IBM Plex Mono', sans-serif;
     font-weight: 700;
-    color: var(--article-font-color);
+    color: var(--article-title-font-color);
     font-size: 18px;
+    line-height: 23.4px;
     display: flex;
     margin-bottom: 20px;
 }
