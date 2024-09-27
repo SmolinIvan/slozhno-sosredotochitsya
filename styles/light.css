@@ -15,9 +15,8 @@
     --description-font-color: #353430;
     --corner-color: #353430;
     --rec-visibility: transparent;
+    --link--shadow: #FF8DCB;
 }
-
-
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
@@ -33,4 +32,5 @@
     --description-font-color: #353430;
     --corner-color: #353430;
     --rec-visibility: transparent;
+    --link--shadow: #FF8DCB;
 }
