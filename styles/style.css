@@ -16,7 +16,8 @@
     position: relative;
     display: grid;
     grid-template-rows:  1fr min-content 1fr;
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 668px;
     padding: 10px;
 }
 
@@ -36,7 +37,7 @@
     width: 70px;
     height: 26px;
     border: none;
-    color: var(--article-title-font-color) ;
+    color: var(--article-title-font-color);
     font-family: "IBM Plex Mono", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -58,6 +59,7 @@
 
 .header__theme-menu-button_active {
     border: 1px var(--article-title-font-color) solid;
+    pointer-events: none;
 }
 
 .main_title {
@@ -78,7 +80,6 @@
     justify-self: end;
     align-self: center;
     width: min(100%,364px);
-    max-height: 117px;
     color: var(--subtitle-font-color);
     font-family: 'IBM Plex Mono', sans-serif;
     font-weight: 700;
