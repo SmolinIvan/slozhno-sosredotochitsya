@@ -1,7 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-
-
 .page {
     /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
     background-color: var(--background-color);
@@ -18,6 +16,7 @@
     grid-template-rows:  1fr min-content 1fr;
     height: 100vh;
     min-height: 668px;
+    /*margin-top: 20px;*/
     padding: 10px;
 }
 
@@ -102,10 +101,6 @@
     background-color: var(--title-background-color);
 }
 
-.extra_margin {
-    margin-top: 10px;
-}
-
 .decorated-zone::before {
     content: "";
     position: absolute;
@@ -113,24 +108,27 @@
     top: 10px;
     width: 25px;
     height: 25px;
-    border-top: 1px solid var(--rec-visibility);
-    border-right: 1px solid var(--rec-visibility);
+    border-top: 1px solid var(--corner-color);
+    border-right: 1px solid var(--corner-color);
     justify-self: end;
 }
 
 .decorated-zone::after {
     content: "";
-    position: relative;
+    position: absolute;
+    top: calc(100vh - 34px);
+    left: 10px;
     width: 25px;
     height: 25px;
-    border-bottom: 1px solid var(--rec-visibility);
-    border-left: 1px solid var(--rec-visibility);
+    border-bottom: 1px solid var(--corner-color);
+    border-left: 1px solid var(--corner-color);
 }
 
 .rec {
     position: absolute;
-    top: 15px;
-    right: 20px;
+    top: 10px;
+    font-size: 18px;
+    right: 18px;
     display: flex;
     color: var(--rec-visibility);
     font-family: 'IBM Plex Mono', sans-serif;
@@ -155,9 +153,15 @@
     padding: 0px 10px 0px 10px;
 }
 
+.content_type {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .article_title {
     display: flex;
-    margin-bottom: 20px;
+
     color: var(--article-title-font-color);
     font-family: 'IBM Plex Mono', sans-serif;
     font-weight: 700;
@@ -242,6 +246,7 @@
     }
 
     .decorated-zone::after {
+        top: calc(100vh - 44px);
         left: 20px;
     }
 
@@ -268,7 +273,9 @@
     }
 
     .block {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
     }
 
     .three_columns {
@@ -352,15 +359,9 @@
         max-width: calc(98vw / 3);
     }
 
-    .block {
-        display: block;
-    }
-
     .three_columns {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap:20px;
     }
-
-
 }
