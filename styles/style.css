@@ -165,18 +165,6 @@
     line-height: 23.4px;
 }
 
-.article_block_1 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.article_block_2 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
 .description {
     display: block;
     color: var(--description-font-color);
@@ -198,6 +186,11 @@
 .outer_article:focus {
     border: currentColor 1px solid;
     outline: none;
+}
+
+.article_block {
+    display: grid;
+    gap: 20px;
 }
 
 .article_template {
@@ -243,46 +236,43 @@
         padding: 20px 20px 20px 0px;
     }
 
+    .decorated-zone::before {
+        right: 20px;
+        top: 20px;
+    }
+
+    .decorated-zone::after {
+        left: 20px;
+    }
+
     .main_content {
         gap: 80px;
         margin-top: 60px;
         padding: 0px 20px 0px 20px;
     }
 
-    .right_corner {
-        top: 20px;
-        right: 20px;
-    }
-
     .rec {
-        top: 22px;
-        right: 50px;
-    }
-
-    .left_corner {
-        bottom: 20px;
-        left: 20px;
+        top: 25px;
+        right: 30px;
     }
 
     .article_title {
         min-width: 236px;
-        max-width: calc((98vw / 3) - 20px);
+        max-width: calc((100vw / 3) - 20px);
     }
 
-    .article_template {
-        gap: 10px;
-    }
-
-    .content_type_1 {
+    .content_type {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 2fr;
         gap: 20px;
-
     }
 
-    .article_block_1 {
-        grid-column-start: 2;
-        grid-column-end: span 2;
+    .block {
+        display: block;
+    }
+
+    .three_columns {
+        display: block;
     }
 
     .focus_images {
@@ -319,8 +309,6 @@
         grid-row-start: 2;
     }
 
-
-
     .picture:nth-of-type(5)  {
         grid-column-start: 2;
         grid-column-end: span 2;
@@ -335,6 +323,10 @@
 
     .header {
         padding: 2px 20px 4px 0px;
+    }
+
+    .decorated-zone::after {
+        bottom: 20px;
     }
 
     .header__theme-menu {
@@ -360,14 +352,15 @@
         max-width: calc(98vw / 3);
     }
 
-    .content_type_2 {
-        display: grid;
-        grid-auto-flow: row;
+    .block {
+        display: block;
     }
 
-    .article_block_2 {
+    .three_columns {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+        gap:20px;
     }
+
+
 }

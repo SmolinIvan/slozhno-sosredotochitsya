@@ -27,7 +27,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         /* Дублируем переменные светлой темы */
-        --background-image: url("../images/cover-image-dark.png") fixed;
+        --background-image: url("../images/cover-image-dark.png");
         --background-color: rgb(0 0 40);
         --header-shadow: 4px 4px #FF0070;
         --title-background-color: #FF0070;
