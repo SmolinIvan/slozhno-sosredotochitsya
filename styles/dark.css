@@ -22,6 +22,7 @@
     --rec-visibility: #FF0070;
     --corner-color: #FF0070;
     --link--shadow: #FF0070;
+    --border-hover-color: #FF007066;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,6 +39,7 @@
         --rec-visibility: #FF0070;
         --corner-color: #FF0070;
         --link--shadow: #FF0070;
+        --border-hover-color: #FF007066;
     }
 }
 

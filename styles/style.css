@@ -16,7 +16,6 @@
     grid-template-rows:  1fr min-content 1fr;
     height: 100vh;
     min-height: 668px;
-    /*margin-top: 20px;*/
     padding: 10px;
 }
 
@@ -37,7 +36,7 @@
     height: 26px;
     border: none;
     color: var(--article-title-font-color);
-    font-family: "IBM Plex Mono", sans-serif;
+    font-family: "IBM Plex Mono", sans-serif, monospace;
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
@@ -47,8 +46,8 @@
 }
 
 .header__theme-menu-button:hover {
-    border: 0.5px solid;
-    outline: none;
+    border: 1px solid var(--border-hover-color);
+
 }
 
 .header__theme-menu-button:focus {
@@ -66,7 +65,7 @@
     justify-self: start;
     align-self: center;
     color: var(--header-font-color);
-    font-family: 'IBM Plex Mono', sans-serif;
+    font-family: 'IBM Plex Mono', sans-serif, monospace;
     font-weight: 700;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     line-height: 95.7px;
@@ -80,7 +79,7 @@
     align-self: center;
     width: min(100%,364px);
     color: var(--subtitle-font-color);
-    font-family: 'IBM Plex Mono', sans-serif;
+    font-family: 'IBM Plex Mono', sans-serif, monospace;
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
@@ -93,7 +92,7 @@
     width: 100%;
     margin-left: auto;
     color: var(--subtitle-font-color) ;
-    font-family: 'IBM Plex Mono', sans-serif;
+    font-family: 'IBM Plex Mono', sans-serif, monospace;
     font-weight: 700;
     font-size: 18px;
     line-height: 23.4px;
@@ -104,13 +103,13 @@
 .decorated-zone::before {
     content: "";
     position: absolute;
-    right: 10px;
     top: 10px;
+    right: 10px;
+    justify-self: end;
     width: 25px;
     height: 25px;
     border-top: 1px solid var(--corner-color);
     border-right: 1px solid var(--corner-color);
-    justify-self: end;
 }
 
 .decorated-zone::after {
@@ -127,11 +126,11 @@
 .rec {
     position: absolute;
     top: 10px;
-    font-size: 18px;
     right: 18px;
     display: flex;
     color: var(--rec-visibility);
-    font-family: 'IBM Plex Mono', sans-serif;
+    font-family: 'IBM Plex Mono', sans-serif, monospace;
+    font-size: 18px;
 }
 
 .rec::after {
@@ -140,7 +139,7 @@
     height: 10px;
     margin: auto auto auto 10px;
     border-radius: 9px;
-    box-shadow: 0px 0px 5px 3px var(--rec-visibility);
+    box-shadow: 0 0 5px 3px var(--rec-visibility);
     background-color:var(--rec-visibility);
 
 }
@@ -150,7 +149,7 @@
     flex-direction: column;
     gap: 50px;
     margin-top: 40px;
-    padding: 0px 10px 0px 10px;
+    padding: 0 10px 0 10px;
 }
 
 .content_type {
@@ -163,7 +162,7 @@
     display: flex;
 
     color: var(--article-title-font-color);
-    font-family: 'IBM Plex Mono', sans-serif;
+    font-family: 'IBM Plex Mono', sans-serif, monospace;
     font-weight: 700;
     font-size: 18px;
     line-height: 23.4px;
@@ -172,7 +171,7 @@
 .description {
     display: block;
     color: var(--description-font-color);
-    font-family: 'IBM Plex Mono', sans-serif;
+    font-family: 'IBM Plex Mono', sans-serif, monospace;
     font-weight: 400;
     font-size: 18px;
     line-height: 23.4px;
@@ -207,11 +206,19 @@
     font-weight: 400;
 }
 
+.picture_block {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
 .focus_images {
     display: grid;
     grid-auto-flow: row;
     gap: 10px;
+    height: fit-content;
     margin-top: 10px;
+    margin-bottom: 0;
     padding: 0;
 }
 
@@ -237,12 +244,12 @@
     }
 
     .header {
-        padding: 20px 20px 20px 0px;
+        padding: 20px 20px 20px 0;
     }
 
     .decorated-zone::before {
-        right: 20px;
         top: 20px;
+        right: 20px;
     }
 
     .decorated-zone::after {
@@ -253,7 +260,7 @@
     .main_content {
         gap: 80px;
         margin-top: 60px;
-        padding: 0px 20px 0px 20px;
+        padding: 0 20px 0 20px;
     }
 
     .rec {
@@ -279,7 +286,10 @@
     }
 
     .three_columns {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
     }
 
     .focus_images {
@@ -329,7 +339,7 @@
 @media (min-width: 1024px) {
 
     .header {
-        padding: 2px 20px 4px 0px;
+        padding: 2px 20px 4px 0;
     }
 
     .decorated-zone::after {
