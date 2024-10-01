@@ -10,6 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
     --background-image: url("../images/cover-image-light.png");
+    --background-color: #FFF1F7;
     --header-shadow: 4px 4px #FF8DCB;
     --header-shadow-wide-screen: 4px 4px #FF0070;
     --title-background-color: #FF8DCB;
